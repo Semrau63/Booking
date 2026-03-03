@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Walters Grooming | Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Premium Barbershop Booking</p>
+        <h1>James Walters Grooming</h1>
+        <p class="tagline">
+          A modern online booking experience inspired by Blismo + Square — with
+          memberships, deposits, waitlist, and automated reminders.
+        </p>
+      </div>
+    </header>
+
+    <main class="container grid">
+      <section class="panel">
+        <h2>Book Appointment</h2>
+        <form id="booking-form">
+          <label>
+            Service
+            <select id="service" required></select>
+          </label>
+
+          <label>
+            Barber
+            <select id="barber" required></select>
+          </label>
+
+          <label>
+            Date
+            <input id="date" type="date" required />
+          </label>
+
+          <label>
+            Time
+            <select id="time" required></select>
+          </label>
+
+          <label>
+            Full name
+            <input id="name" type="text" placeholder="Client full name" required />
+          </label>
+
+          <label>
+            Mobile number
+            <input id="phone" type="tel" placeholder="(555) 555-5555" required />
+          </label>
+
+          <label>
+            Email
+            <input id="email" type="email" placeholder="client@email.com" required />
+          </label>
+
+          <label class="inline">
+            <input id="membership" type="checkbox" />
+            Apply member pricing
+          </label>
+
+          <button type="submit">Reserve & Pay Deposit</button>
+        </form>
+        <p id="confirmation" class="confirmation" aria-live="polite"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Today's Schedule</h2>
+        <ul id="appointments" class="list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Waitlist</h2>
+        <form id="waitlist-form" class="inline-form">
+          <input id="waitlist-name" type="text" placeholder="Name" required />
+          <input id="waitlist-service" type="text" placeholder="Service needed" required />
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <ul id="waitlist" class="list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Business Dashboard</h2>
+        <div class="metrics">
+          <article>
+            <p>Bookings</p>
+            <strong id="metric-bookings">0</strong>
+          </article>
+          <article>
+            <p>Projected Revenue</p>
+            <strong id="metric-revenue">$0</strong>
+          </article>
+          <article>
+            <p>Deposits Collected</p>
+            <strong id="metric-deposits">$0</strong>
+          </article>
+          <article>
+            <p>Waitlist Entries</p>
+            <strong id="metric-waitlist">0</strong>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>Built for James Walters Grooming • Replica-plus concept</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

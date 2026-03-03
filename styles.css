@@ -1,0 +1,168 @@
+:root {
+  --bg: #0f1115;
+  --panel: #181b22;
+  --text: #f5f7fa;
+  --muted: #a2a9b7;
+  --accent: #d4a95a;
+  --accent-strong: #bd8f3e;
+  --ok: #8bf0b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #0b0d12, #121621);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  border-bottom: 1px solid #2a2f3b;
+  padding: 2rem 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  font-size: 0.78rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+}
+
+.tagline {
+  color: var(--muted);
+  max-width: 64ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.4rem 2rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid #2a2f3b;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid #333a49;
+  background: #11151d;
+  color: var(--text);
+  padding: 0.6rem 0.7rem;
+}
+
+button {
+  border: 0;
+  background: var(--accent);
+  color: #1a1204;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-strong);
+}
+
+.inline-form {
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.list li {
+  background: #11151d;
+  border: 1px solid #2e3442;
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.metrics article {
+  background: #11151d;
+  border: 1px solid #2e3442;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.metrics p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.metrics strong {
+  font-size: 1.3rem;
+}
+
+.confirmation {
+  color: var(--ok);
+  min-height: 1.2rem;
+}
+
+.footer {
+  border-top: 1px solid #2a2f3b;
+  color: var(--muted);
+  padding: 1rem 0 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inline-form {
+    grid-template-columns: 1fr;
+  }
+}
