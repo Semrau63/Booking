@@ -1,0 +1,12 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#0B0B0B"/>
+  <rect x="60" y="60" width="780" height="980" rx="34" fill="#161616" stroke="#D4AF37" stroke-opacity="0.28" stroke-width="2"/>
+  <circle cx="720" cy="600" r="118" fill="#D4AF37" fill-opacity="0.18"/>
+  <circle cx="460" cy="820" r="152" fill="#F3DD8D" fill-opacity="0.08"/>
+  <path d="M180 860C250 760 340 690 450 690C560 690 650 760 720 860" stroke="#F3DD8D" stroke-opacity="0.8" stroke-width="20" stroke-linecap="round"/>
+  <rect x="300" y="260" width="300" height="320" rx="150" fill="#2A2A2A" stroke="#D4AF37" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M300 430C344 336 391 290 450 290C509 290 556 336 600 430" fill="#D4AF37" fill-opacity="0.16"/>
+  <rect x="340" y="450" width="220" height="92" rx="46" fill="#121212" stroke="#D4AF37" stroke-opacity="0.26"/>
+  <text x="100" y="980" fill="#F8F1D8" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">James Walters Grooming</text>
+  <text x="100" y="1028" fill="#C9BEA1" font-family="Arial, Helvetica, sans-serif" font-size="24">Luxury barber imagery placeholder 6</text>
+</svg>
