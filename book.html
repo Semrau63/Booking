@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book | James Walters Grooming</title>
+    <meta
+      name="description"
+      content="Book a grooming appointment online with service selection, barber preferences, add-ons, and notes for James Walters Grooming."
+    />
+    <link rel="canonical" href="https://jameswaltersgrooming.com/book" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="book">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-badge">✦</span><span><strong>James Walters Grooming</strong><small>Modern luxury grooming</small></span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="services.html" data-nav="services">Services</a>
+        <a href="gallery.html" data-nav="gallery">Gallery</a>
+        <a href="gift-cards.html" data-nav="gift-cards">Gift Cards</a>
+        <a href="book.html" data-nav="book">Book</a>
+      </nav>
+      <a class="header-cta" href="tel:+14045550198">(404) 555-0198</a>
+    </header>
+    <div class="page-shell">
+      <main class="main">
+        <section class="hero-card large">
+          <p class="eyebrow">Booking</p>
+          <h1>A smooth booking experience that feels premium from the first click.</h1>
+          <p>This sample booking app includes service selection, add-ons, schedule preferences, and a clear path to connect deposits, Square checkout, and automated follow-up later.</p>
+        </section>
+
+        <section class="section-wrap booking-layout">
+          <form id="booking-form" class="booking-form">
+            <div class="form-grid">
+              <label class="field">Service
+                <select id="service" required>
+                  <option value="signature">Signature Grooming Experience — $75</option>
+                  <option value="executive">Executive Skin Fade + Beard — $65</option>
+                  <option value="kids">Luxury Kids Cut — $40</option>
+                  <option value="scalp">Scalp Renewal &amp; Steam Shave — $55</option>
+                </select>
+              </label>
+              <label class="field">Barber
+                <select id="barber" required>
+                  <option>James Walters</option>
+                  <option>Master Barber Eli</option>
+                  <option>Senior Stylist Nova</option>
+                </select>
+              </label>
+              <label class="field">Preferred date
+                <input id="date" type="date" required />
+              </label>
+              <label class="field">Time slot
+                <select id="time" required>
+                  <option>9:00 AM</option>
+                  <option>10:30 AM</option>
+                  <option>12:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:30 PM</option>
+                  <option>5:00 PM</option>
+                  <option>6:30 PM</option>
+                </select>
+              </label>
+              <label class="field">Guest name
+                <input id="guest-name" type="text" placeholder="Your full name" required />
+              </label>
+              <label class="field">Mobile number
+                <input id="phone" type="tel" placeholder="(404) 555-0198" required />
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>Add-on upgrades</legend>
+              <div class="chip-row">
+                <button class="chip" type="button" data-addon="Black mask detox">Black mask detox (+$15)</button>
+                <button class="chip" type="button" data-addon="Eyebrow detailing">Eyebrow detailing (+$15)</button>
+                <button class="chip" type="button" data-addon="Enhanced beard conditioning">Enhanced beard conditioning (+$15)</button>
+                <button class="chip" type="button" data-addon="Scalp exfoliation">Scalp exfoliation (+$15)</button>
+                <button class="chip" type="button" data-addon="Express gray blending">Express gray blending (+$15)</button>
+              </div>
+            </fieldset>
+
+            <label class="field">Notes for the team
+              <textarea id="notes" rows="5" placeholder="Hair goals, wedding prep, beard preferences, parking requests, or accessibility details."></textarea>
+            </label>
+
+            <div class="note-box">
+              Want live checkout and deposits? Connect this booking form to Square payment links, text confirmations, and your AI answering workflow.
+            </div>
+
+            <button class="button" type="submit">Reserve appointment</button>
+          </form>
+
+          <aside class="booking-summary">
+            <p class="eyebrow">Booking summary</p>
+            <h3 id="summary-service">Signature Grooming Experience — $75</h3>
+            <p id="summary-description">Precision haircut, hot towel treatment, beard shaping, mini facial cleanse, and finishing consultation.</p>
+            <ul class="summary-list">
+              <li class="summary-row"><span>Barber</span><strong id="summary-barber">James Walters</strong></li>
+              <li class="summary-row"><span>Date</span><strong id="summary-date">Choose a date</strong></li>
+              <li class="summary-row"><span>Time</span><strong id="summary-time">9:00 AM</strong></li>
+              <li class="summary-row"><span>Add-ons</span><strong id="summary-addons">None selected</strong></li>
+              <li class="summary-row"><span>Estimated total</span><strong id="summary-total">$75</strong></li>
+            </ul>
+            <div class="divider"></div>
+            <p>Need payments and deposits through Square? Connect this booking flow to Square checkout links for prepaid services, no-show protection, and POS-ready customer records.</p>
+            <div id="booking-result"></div>
+          </aside>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div><p class="eyebrow">James Walters Grooming</p><h3>Booking flow ready for Square and concierge integrations.</h3></div>
+        <div class="footer-grid">
+          <div><p class="eyebrow">Visit</p><p>1180 Howell Mill Rd NW, Atlanta, GA 30318</p></div>
+          <div><p class="eyebrow">Contact</p><p>(404) 555-0198</p><p>hello@jameswaltersgrooming.com</p></div>
+          <div><p class="eyebrow">Hours</p><p>Mon–Thu: 9:00 AM – 7:00 PM</p><p>Fri: 9:00 AM – 8:00 PM</p><p>Sat: 8:00 AM – 6:00 PM</p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+  </body>
+</html>

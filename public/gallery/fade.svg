@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="900" fill="#090909"/>
+<circle cx="925" cy="150" r="210" fill="url(#paint0_radial_11_2)" fill-opacity="0.65"/>
+<path d="M220 635C252 458 404 310 594 310C734 310 856 398 917 534" stroke="#D6AB46" stroke-width="14" stroke-linecap="round"/>
+<path d="M356 650C396 533 487 454 607 454C698 454 777 500 826 571" stroke="#F2E3BA" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+<path d="M403 271C453 236 518 214 589 214C680 214 762 250 820 311" stroke="#D6AB46" stroke-opacity="0.8" stroke-width="7" stroke-linecap="round"/>
+<rect x="142" y="725" width="916" height="54" rx="27" fill="#151515" stroke="#D6AB46" stroke-opacity="0.35"/>
+<text x="165" y="760" fill="#F7F1DC" font-family="Arial, sans-serif" font-size="28">Gold Standard Fade · Precision blend and beard detail</text>
+<defs>
+<radialGradient id="paint0_radial_11_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(925 150) rotate(90) scale(210)">
+<stop stop-color="#D6AB46"/>
+<stop offset="1" stop-color="#D6AB46" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="900" fill="#080808"/>
+<rect x="120" y="150" width="960" height="600" rx="42" fill="#111111" stroke="#D6AB46" stroke-opacity="0.25" stroke-width="4"/>
+<rect x="220" y="240" width="260" height="380" rx="30" fill="#181818" stroke="#D6AB46" stroke-opacity="0.2"/>
+<rect x="520" y="240" width="420" height="240" rx="30" fill="#151515"/>
+<rect x="520" y="515" width="420" height="105" rx="24" fill="#151515"/>
+<circle cx="745" cy="355" r="115" fill="url(#paint0_radial_21_4)" fill-opacity="0.75"/>
+<text x="170" y="710" fill="#F7F1DC" font-family="Arial, sans-serif" font-size="34">Luxury Lounge Interior · Black and gold studio branding</text>
+<defs>
+<radialGradient id="paint0_radial_21_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(745 355) rotate(90) scale(115)">
+<stop stop-color="#D6AB46"/>
+<stop offset="1" stop-color="#D6AB46" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
