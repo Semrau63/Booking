@@ -1,0 +1,8 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="900" fill="#080808"/>
+<path d="M317 660C317 544.573 410.573 451 526 451H674C789.427 451 883 544.573 883 660V706H317V660Z" fill="#151515" stroke="#D6AB46" stroke-opacity="0.3" stroke-width="4"/>
+<circle cx="454" cy="343" r="96" fill="#151515" stroke="#F7F1DC" stroke-opacity="0.8" stroke-width="10"/>
+<circle cx="746" cy="343" r="96" fill="#151515" stroke="#F7F1DC" stroke-opacity="0.8" stroke-width="10"/>
+<path d="M600 178L622 225H674L632 257L648 309L600 278L552 309L568 257L526 225H578L600 178Z" fill="#D6AB46"/>
+<text x="240" y="804" fill="#F7F1DC" font-family="Arial, sans-serif" font-size="34">Wedding Weekend Prep · Groom and party packages</text>
+</svg>
