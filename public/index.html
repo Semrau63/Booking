@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Booking AI Suite</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Booking AI Suite</h1>
+      <p>Online booking + AI phone/text + smart rebooking + Google review boost.</p>
+    </header>
+
+    <main class="grid">
+      <section>
+        <h2>Create Account</h2>
+        <form id="accountForm">
+          <input name="businessName" placeholder="Business Name" required />
+          <input name="ownerName" placeholder="Owner Name" required />
+          <select name="websiteTheme">
+            <option value="neon">Neon Tech</option>
+            <option value="modern">Modern</option>
+            <option value="minimal">Minimal</option>
+          </select>
+          <button>Create Website Account</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Online Booking</h2>
+        <form id="bookingForm">
+          <input name="accountId" placeholder="Account ID" value="demo-account" required />
+          <input name="clientName" placeholder="Client Name" required />
+          <input name="clientPhone" placeholder="Client Phone" required />
+          <input name="service" placeholder="Service" required />
+          <input name="employeeId" placeholder="Team Member ID" required />
+          <input type="datetime-local" name="startAt" required />
+          <button>Create Booking</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>AI Calling</h2>
+        <form id="callForm">
+          <input name="accountId" value="demo-account" required />
+          <input name="businessName" value="FutureGlow Studio" required />
+          <input name="to" placeholder="Phone Number" required />
+          <input name="goal" placeholder="Call goal (confirm, rebook...)" required />
+          <button>Run AI Call</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>AI Text</h2>
+        <form id="textForm">
+          <input name="accountId" value="demo-account" required />
+          <input name="to" placeholder="Phone Number" required />
+          <textarea name="body" placeholder="Text message" required></textarea>
+          <button>Send AI Text</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Google Review Booster</h2>
+        <form id="reviewForm">
+          <input name="accountId" value="demo-account" required />
+          <input name="businessName" value="FutureGlow Studio" required />
+          <input name="clientName" placeholder="Client Name" required />
+          <input name="clientPhone" placeholder="Client Phone" required />
+          <button>Generate Review Request</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Live Feed</h2>
+        <button id="refreshBtn">Refresh Bookings</button>
+        <pre id="output"></pre>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
