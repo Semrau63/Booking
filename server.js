@@ -102,6 +102,13 @@ const routeApi = async (req, res, path) => {
 
   if (path === '/api/bookings' && req.method === 'POST') {
     const body = await parseBody(req);
+    const startAt = new Date(body.startAt);
+
+    if (!body.startAt || Number.isNaN(startAt.getTime())) {
+      sendJSON(res, 400, { error: 'Invalid startAt: expected a valid date-time value' });
+      return;
+    }
+
     const booking = {
       id: randomUUID(),
       accountId: body.accountId,
@@ -109,9 +116,9 @@ const routeApi = async (req, res, path) => {
       clientPhone: body.clientPhone,
       service: body.service,
       employeeId: body.employeeId,
-      startAt: body.startAt,
+      startAt: startAt.toISOString(),
       createdAt: new Date().toISOString(),
-      smartRebookAt: aiRebookingDate(body.startAt, body.rebookingWindowDays || 28)
+      smartRebookAt: aiRebookingDate(startAt, body.rebookingWindowDays || 28)
     };
     db.bookings.push(booking);
 
@@ -134,12 +141,13 @@ const routeApi = async (req, res, path) => {
 
   if (path === '/api/ai/call' && req.method === 'POST') {
     const body = await parseBody(req);
+    const goal = body.goal || 'Confirm appointment';
     const log = {
       id: randomUUID(),
       accountId: body.accountId,
       to: body.to,
-      goal: body.goal || 'Confirm appointment',
-      transcript: `AI Agent: Hi! This is your automated assistant from ${body.businessName}. I'm calling to ${body.goal}.`,
+      goal,
+      transcript: `AI Agent: Hi! This is your automated assistant from ${body.businessName}. I'm calling to ${goal}.`,
       provider: 'FREE-MODE-SIMULATION',
       createdAt: new Date().toISOString()
     };
